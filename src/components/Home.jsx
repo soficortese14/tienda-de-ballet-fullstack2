@@ -25,15 +25,15 @@ function Home({ onActualizarCarrito }) {
   };
 
   return (
-    <Container className="my-5">
+    <Container fluid="lg" className="my-5" style={{ maxWidth: '1400px' }}>
       {mostrarAlerta && (
         <Alert variant="success" className="text-center">
-          ✅ {productoAgregado} agregado al carrito
+          {productoAgregado} agregado al carrito
         </Alert>
       )}
 
       <div className="text-center mb-5">
-        <h1 style={{ color: '#ff69b4' }}>🩰 Productos de Ballet</h1>
+        <h1 style={{ color: '#ff69b4' }}>Productos de Ballet</h1>
         <p className="text-muted">Encuentra todo lo que necesitas para tu danza</p>
       </div>
 

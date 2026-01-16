@@ -25,7 +25,7 @@ function ProductoCard({ producto, onAgregarCarrito }) {
             style={{ backgroundColor: '#ff69b4', borderColor: '#ff69b4' }}
             onClick={() => onAgregarCarrito(producto)}
           >
-            Agregar al Carrito 🛒
+            Agregar al Carrito
           </Button>
         </div>
       </Card.Body>
