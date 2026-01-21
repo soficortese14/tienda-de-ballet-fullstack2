@@ -24,9 +24,8 @@ public class Usuario {
     @Column(nullable = false)
     private String password;
 
-    @NotBlank(message = "El rol es obligatorio")
     @Column(nullable = false)
-    private String rol; // "USER" o "ADMIN"
+    private String rol; // "USER" o "ADMIN" - Se asigna automáticamente en el registro
 
     // Constructor vacío
     public Usuario() {
