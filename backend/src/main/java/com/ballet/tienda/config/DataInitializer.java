@@ -83,6 +83,13 @@ public class DataInitializer implements CommandLineRunner {
             "ADMIN"
         ));
 
+        usuarioRepository.save(new Usuario(
+            "lanadelrey",
+            "lana@ballet.com",
+            "lana123",
+            "USER"
+        ));
+
         System.out.println("========================================");
         System.out.println("✅ DATOS DE PRUEBA CREADOS");
         System.out.println("📦 " + productoRepository.count() + " productos");

@@ -1,16 +1,19 @@
 import { useState, useEffect } from 'react';
+import { AuthProvider } from './context/AuthContext';
 import NavbarComponent from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import Carrito from './components/Carrito';
 import Blog from './components/Blog';
 import Nosotros from './components/Nosotros';
+import Contacto from './components/Contacto';
+import AdminPanel from './components/AdminPanel';
 import { obtenerCarrito, obtenerCantidadTotal } from './utils/carritoUtils';
 import './estilos.css';
 
 function App() {
   const [cantidadCarrito, setCantidadCarrito] = useState(0);
-  const [vistaActual, setVistaActual] = useState('home'); // 'home', 'carrito', 'blog', 'nosotros'
+  const [vistaActual, setVistaActual] = useState('home'); // 'home', 'carrito', 'blog', 'nosotros', 'contacto', 'admin'
 
   // Cargar cantidad del carrito al iniciar
   useEffect(() => {
@@ -39,37 +42,57 @@ function App() {
     setVistaActual('nosotros');
   };
 
+  const irAContacto = () => {
+    setVistaActual('contacto');
+  };
+
+  const irAAdmin = () => {
+    setVistaActual('admin');
+  };
+
   return (
-    <div className="App">
-      <NavbarComponent
-        cantidadCarrito={cantidadCarrito}
-        onIrCarrito={irACarrito}
-        onIrInicio={volverInicio}
-        onIrBlog={irABlog}
-        onIrNosotros={irANosotros}
-      />
-
-      {vistaActual === 'home' && (
-        <Home onActualizarCarrito={actualizarCantidadCarrito} />
-      )}
-
-      {vistaActual === 'carrito' && (
-        <Carrito
-          onActualizarCarrito={actualizarCantidadCarrito}
-          onVolverInicio={volverInicio}
+    <AuthProvider>
+      <div className="App">
+        <NavbarComponent
+          cantidadCarrito={cantidadCarrito}
+          onIrCarrito={irACarrito}
+          onIrInicio={volverInicio}
+          onIrBlog={irABlog}
+          onIrNosotros={irANosotros}
+          onIrContacto={irAContacto}
+          onIrAdmin={irAAdmin}
         />
-      )}
 
-      {vistaActual === 'blog' && (
-        <Blog />
-      )}
+        {vistaActual === 'home' && (
+          <Home onActualizarCarrito={actualizarCantidadCarrito} />
+        )}
 
-      {vistaActual === 'nosotros' && (
-        <Nosotros />
-      )}
+        {vistaActual === 'carrito' && (
+          <Carrito
+            onActualizarCarrito={actualizarCantidadCarrito}
+            onVolverInicio={volverInicio}
+          />
+        )}
 
-      <Footer />
-    </div>
+        {vistaActual === 'blog' && (
+          <Blog />
+        )}
+
+        {vistaActual === 'nosotros' && (
+          <Nosotros />
+        )}
+
+        {vistaActual === 'contacto' && (
+          <Contacto />
+        )}
+
+        {vistaActual === 'admin' && (
+          <AdminPanel onVolverInicio={volverInicio} />
+        )}
+
+        <Footer />
+      </div>
+    </AuthProvider>
   );
 }
 
