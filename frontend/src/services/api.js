@@ -30,10 +30,10 @@ api.interceptors.response.use(
   (response) => response,
   (error) => {
     if (error.response?.status === 401) {
-      // Token expirado o inválido
+      // Token expirado o inválido - limpiar localStorage
       localStorage.removeItem('token');
       localStorage.removeItem('usuario');
-      window.location.href = '/login';
+      // No redirigir, solo limpiar - AuthContext manejará el estado
     }
     return Promise.reject(error);
   }

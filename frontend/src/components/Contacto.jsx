@@ -133,7 +133,7 @@ function Contacto() {
           </div>
           <div className="col-md-4 mb-3">
             <h6><strong>✉️ Email</strong></h6>
-            <p>contacto@ballettie nda.cl</p>
+            <p>contacto@ballettienda.cl</p>
           </div>
         </div>
       </div>
