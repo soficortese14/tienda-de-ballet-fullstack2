@@ -7,6 +7,7 @@ function Footer() {
         </p>
         <p className="mb-0">
           <small>Hecho con 💖 para bailarinas</small>
+          <small>Hecho por: Sofi Cortese</small>
         </p>
       </div>
     </footer>
