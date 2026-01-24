@@ -56,7 +56,7 @@ function NavbarComponent({ cantidadCarrito = 0, onIrCarrito, onIrInicio, onIrBlo
                 <>
                   {usuario?.rol === 'ADMIN' && (
                     <Button
-                      variant="outline-warning"
+                      variant="success"
                       size="sm"
                       onClick={onIrAdmin}
                       style={{ marginLeft: '10px' }}
