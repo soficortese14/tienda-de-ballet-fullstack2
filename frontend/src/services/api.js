@@ -1,3 +1,6 @@
+//Centro de comunicacion con el backend usando Axios + JWT 
+//frontend se comunica con el backend!!!!!!!
+//axios es Librería para hacer peticiones HTTP
 import axios from 'axios';
 
 // URL base del backend
@@ -39,9 +42,7 @@ api.interceptors.response.use(
   }
 );
 
-// ============================================
 // SERVICIOS DE AUTENTICACIÓN
-// ============================================
 
 /**
  * Registrar nuevo usuario
@@ -97,10 +98,7 @@ export const getUsuarioActual = () => {
   const usuario = localStorage.getItem('usuario');
   return usuario ? JSON.parse(usuario) : null;
 };
-
-// ============================================
 // SERVICIOS DE PRODUCTOS
-// ============================================
 
 /**
  * Obtener todos los productos
@@ -161,10 +159,7 @@ export const eliminarProducto = async (id) => {
   const response = await api.delete(`/productos/${id}`);
   return response.data;
 };
-
-// ============================================
 // SERVICIOS DE CARRITO
-// ============================================
 
 /**
  * Obtener carrito del usuario
@@ -222,11 +217,7 @@ export const vaciarCarrito = async (usuarioId) => {
   const response = await api.delete(`/carrito/usuario/${usuarioId}`);
   return response.data;
 };
-
-// ============================================
 // SERVICIOS DE USUARIOS (Admin)
-// ============================================
-
 /**
  * Obtener todos los usuarios (Admin)
  * @returns {Promise} Lista de usuarios
