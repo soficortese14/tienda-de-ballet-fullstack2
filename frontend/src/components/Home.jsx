@@ -1,3 +1,6 @@
+//pagina principal que muestra catalogo de productos
+//componente de la pagina de inicio donde se muestran todos los productos disponibles en cards. Los usuarios pueden ver        
+//productos y agregarlos al carrito
 import { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
