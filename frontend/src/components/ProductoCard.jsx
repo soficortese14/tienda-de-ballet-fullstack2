@@ -1,3 +1,4 @@
+//Componente individual que muestra cada producto como una tarjeta (card) ç
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
