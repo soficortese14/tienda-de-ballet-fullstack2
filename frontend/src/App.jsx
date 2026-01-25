@@ -1,3 +1,4 @@
+//Componente principal que coordina toda la aplicación, define que se muestra y cómo funciona la navegación.
 import { useState, useEffect } from 'react';
 import { AuthProvider } from './context/AuthContext';
 import NavbarComponent from './components/Navbar';
