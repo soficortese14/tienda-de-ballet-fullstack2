@@ -1,3 +1,7 @@
+//Sistema de autenticación global con JWT (JSON Web Token)
+//explicacion: este archivo implementa Context API de React para que cualquer
+//componente pueda acceder a la info del usuario autenticado sin pasar props  
+//manualmente por toda la jerarquia de componentes
 import { createContext, useContext, useState, useEffect } from 'react';
 import { login as loginAPI, logout as logoutAPI, getUsuarioActual } from '../services/api';
 
