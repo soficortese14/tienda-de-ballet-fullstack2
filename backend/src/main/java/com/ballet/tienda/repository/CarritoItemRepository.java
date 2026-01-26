@@ -1,6 +1,7 @@
 // interfaz entre  codigo Java y la base de datos MySQL. 
 ////SQL + JPA/Hibernate + JDBC  ------aca es la conexion del  Backend → Base de datos (SQL) 
-
+//jdbc: Java Database Connectivity conecta la aplicacion Java con la base de datos MySQL
+//jpa: Object-Relational Mapping Usa JDBC internamente
 package com.ballet.tienda.repository;
 
 import com.ballet.tienda.entity.CarritoItem;
