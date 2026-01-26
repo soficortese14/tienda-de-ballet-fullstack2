@@ -1,3 +1,4 @@
+// interfaz entre  codigo Java y la base de datos MySQL. 
 package com.ballet.tienda.repository;
 
 import com.ballet.tienda.entity.CarritoItem;
