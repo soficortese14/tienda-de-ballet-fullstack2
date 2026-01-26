@@ -1,3 +1,4 @@
+//Los Controllers definen los endpoints REST usando anotaciones de Spring Boot
 package com.ballet.tienda.controller;
 
 import com.ballet.tienda.entity.Producto;
