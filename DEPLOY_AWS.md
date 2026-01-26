@@ -353,17 +353,17 @@ http://[TU_IP_PUBLICA]
 
 ### 11.1 Checklist de verificación
 
-✅ **Base de datos:**
+**Base de datos:**
 - [ ] MySQL corriendo en Docker: `sudo docker ps`
 - [ ] MySQL Workbench conectado
 - [ ] 3 tablas creadas: carrito, productos, usuarios
 
-✅ **Backend:**
+**Backend:**
 - [ ] Backend ejecutándose: `http://[IP]:8080/api/productos`
 - [ ] Usuarios de prueba creados (admin, sofia, lanadelrey)
 - [ ] 6 productos iniciales cargados
 
-✅ **Frontend:**
+**Frontend:**
 - [ ] API_URL apuntando a IP pública
 - [ ] Login funcional
 - [ ] Catálogo de productos visible
