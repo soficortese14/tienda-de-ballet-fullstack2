@@ -1,3 +1,5 @@
+// Modelo de datos / Representación de una tabla de base de datos    
+//una clase Java que representa una tabla de MySQL. 
 package com.ballet.tienda.entity;
 
 import jakarta.persistence.*;
