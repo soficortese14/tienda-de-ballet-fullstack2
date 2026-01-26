@@ -1,6 +1,6 @@
 //Centro de comunicacion con el backend usando Axios + JWT 
 //frontend se comunica con el backend!!!!!!!
-//axios es Librería para hacer peticiones HTTP
+//api.js usa axios (libreria) para peticiones HTTP, y los interceptores manejan JWT
 import axios from 'axios';
 
 // URL base del backend
