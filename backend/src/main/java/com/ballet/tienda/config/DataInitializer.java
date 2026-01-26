@@ -1,3 +1,4 @@
+// Inicializador de datos de prueba  clase que carga datos iniciales en la base de datos cuando la aplicación inicia
 package com.ballet.tienda.config;
 
 import com.ballet.tienda.entity.Producto;
