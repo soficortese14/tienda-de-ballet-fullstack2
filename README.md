@@ -1,6 +1,7 @@
-# 🩰 Tienda Ballet React
+# Tienda Ballet React
 
-Aplicación web de comercio electrónico especializada en productos de ballet, desarrollada con React + Vite para la Evaluación Parcial 2 de Desarrollo Fullstack II.
+Aplicación web de productos de ballet, desarrollada con React + Vite para la Evaluación Parcial 2 de Desarrollo Fullstack II. 
+Ocupada tambien para la prueba 3 y examen (actualizados)
 
 ![React](https://img.shields.io/badge/React-19.2.0-blue)
 ![Vite](https://img.shields.io/badge/Vite-7.2.4-purple)
@@ -9,7 +10,7 @@ Aplicación web de comercio electrónico especializada en productos de ballet, d
 
 ---
 
-## 🚀 Inicio Rápido
+## Inicio
 
 ```bash
 # Instalar dependencias
@@ -22,20 +23,11 @@ npm run dev
 npm test
 ```
 
----
 
-## ✨ Características
-
-- ✅ **Catálogo de productos** con 7 productos de ballet
-- ✅ **Sistema de carrito** con persistencia en LocalStorage
-- ✅ **Contador de carrito** en tiempo real
-- ✅ **Diseño responsivo** (móvil, tablet, desktop)
-- ✅ **10 pruebas unitarias** con Vitest (100% pasando)
-- ✅ **Componentes reutilizables** en React
 
 ---
 
-## 🛠️ Tecnologías
+##Tecnologías
 
 - **React 19.2.0** - Framework de UI
 - **Vite 7.2.4** - Build tool
@@ -43,30 +35,10 @@ npm test
 - **Vitest 4.0.17** - Testing
 - **LocalStorage** - Persistencia
 
----
-
-## 📁 Estructura
-
-```
-src/
-├── components/       # Componentes React
-│   ├── Navbar.jsx
-│   ├── Footer.jsx
-│   ├── ProductoCard.jsx
-│   └── Home.jsx
-├── utils/           # Funciones auxiliares
-│   └── carritoUtils.js
-├── data/            # Datos
-│   └── productos.js
-└── App.jsx          # Componente principal
-
-tests/
-└── carritoUtils.test.js  # 10 pruebas unitarias
-```
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ```bash
 npm test
@@ -93,20 +65,7 @@ npm test
 
 ---
 
-## 📚 Documentación
+##  Documentación
 
 - **DOCUMENTO_ERS.md** - Especificación de Requisitos del Software
 - **DOCUMENTO_COBERTURA_TESTING.md** - Cobertura de pruebas
-
----
-
-## 👩‍💻 Autora
-
-**Sofía Cortese**
-- GitHub: [@soficortese14](https://github.com/soficortese14)
-- Proyecto: Evaluación Parcial 2 - Desarrollo Fullstack II
-- Institución: Duoc UC
-
----
-
-🩰 Hecho con 💖 para bailarinas
