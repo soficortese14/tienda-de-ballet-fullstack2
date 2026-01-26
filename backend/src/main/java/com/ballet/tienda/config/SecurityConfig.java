@@ -1,3 +1,6 @@
+//- Define que endpoints son públicos vs privados                                                                                                    
+// - Configura Spring Security                                                                                                                        
+// - Establece reglas de autenticación    
 package com.ballet.tienda.config;
 
 import org.springframework.context.annotation.Bean;
