@@ -1,3 +1,4 @@
+//SQL + JPA/Hibernate + JDBC  ------aca es la conexion del  Backend → Base de datos (SQL) 
 package com.ballet.tienda.repository;
 
 import com.ballet.tienda.entity.Producto;
