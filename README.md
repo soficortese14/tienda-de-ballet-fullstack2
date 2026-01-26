@@ -3,10 +3,6 @@
 Aplicación web de productos de ballet, desarrollada con React + Vite para la Evaluación Parcial 2 de Desarrollo Fullstack II. 
 Ocupada tambien para la prueba 3 y examen (actualizados)
 
-![React](https://img.shields.io/badge/React-19.2.0-blue)
-![Vite](https://img.shields.io/badge/Vite-7.2.4-purple)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.8-pink)
-![Tests](https://img.shields.io/badge/Tests-10%2F10%20passing-success)
 
 ---
 
